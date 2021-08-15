@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
+body {
+  font-family: 'KoHo', sans-serif; }
+
+/* ESTILOS HEADER (Utilizando Anidacion y Variables SASS) */
+.enviosHeader:hover {
+  transform: scale(1.3, 1.3); }
+
+header {
+  border-bottom: solid 1px black; }
+  header p {
+    color: grey;
+    font-size: 35px;
+    font-style: normal;
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px; }
+
+/* ESTILOS MAIN */
+main {
+  background-color: white; }
+
+/* ESTILOS HOMEPAGE (Utilizando Grid de BS combinado con EXTEND SASS) */
+.mainHomeTitulo, .mainHomeParrafo {
+  text-align: center; }
+  .mainHomeTitulo h1, .mainHomeParrafo h1 {
+    color: grey;
+    font-size: 40px; }
+  .mainHomeTitulo p, .mainHomeParrafo p {
+    color: black;
+    font-size: 20px;
+    padding-top: 15px; }
+
+.mainHomeParrafo {
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px; }
+  @media only screen and (max-width: 600px) {
+    .mainHomeParrafo {
+      padding-top: 20px; } }
+  @media only screen and (min-width: 600px) {
+    .mainHomeParrafo {
+      padding-top: 50px; } }
+  @media only screen and (min-width: 992px) {
+    .mainHomeParrafo {
+      padding-top: 150px; } }
+  .mainHomeParrafo h1 {
+    font-size: 30px; }
+  .mainHomeParrafo p {
+    font-size: 18px; }
+
+/* ESTILOS PREGUNTAS FRECUENTES */
+/* ESTILOS NOSOTROS (Utilizando MIXIN) */
+.nosotros {
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .nosotros h1 {
+    color: grey;
+    font-size: 25px; }
+  .nosotros p {
+    color: black;
+    font-size: 22px; }
+  .nosotros p {
+    padding-top: 10px; }
+
+.nosotrosConTitulo {
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .nosotrosConTitulo h1 {
+    color: grey;
+    font-size: 40px; }
+  .nosotrosConTitulo p {
+    color: black;
+    font-size: 20px; }
+  .nosotrosConTitulo h1 {
+    padding-top: 20px; }
+
+form {
+  line-height: 35px; }
+
+/* ESTILOS FOOTER (Utilizando Anidaciones y Variables SASS en SECTION)*/
+footer section {
+  padding-top: 15px;
+  border-top: 1px solid black; }
+  footer section div li {
+    color: grey; }
+    footer section div li a {
+      color: grey;
+      text-decoration: none; }
+  footer section div li:hover {
+    color: #a09f9f; }
+    footer section div li:hover a:hover {
+      color: #a09f9f; }
+
+footer article .redesyderechos {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+footer article .seguinos {
+  font-size: 15px;
+  padding-left: 10px;
+  line-height: 2; }
+
+footer article .derechos {
+  font-size: 10px;
+  padding-right: 10px; }

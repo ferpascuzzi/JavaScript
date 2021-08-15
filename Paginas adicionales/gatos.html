@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TITULO DE LA PAGINA-->
+    <title>MascoLand.com/Gatos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Imagenes/favicon.ico" />
+    <link rel="stylesheet" href="../CSS/estilosass.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description" content="Mascoland es un delivery de alimento balanceado para mascotas">
+    <meta name="keywords" content="alimento balanceado, comida para perros, comida para gatos, envio gratis, entrega gratis, royal canin, eukanuba, pro plan, nutrique, old prince">
+
+</head>
+
+<body class="bg-light">
+    
+<header>
+
+<!--INICIO DEL HEADER-->
+
+<!--MENU DE NAVEGACION (Utilice NAVBAR de BootStrap)-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../Imagenes/logoblack copy.png" alt="logo" class="animate__animated animate__zoomIn"></a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">MascoLand Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas adicionales/perros.html">Perros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Paginas adicionales/gatos.html">Gatos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas adicionales/marcas.html">Marcas</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscá tu marca preferida" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+        
+      </nav>
+      
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="nav-link disabled animate__animated animate__bounceInDown">Somos MascoLand Store, en nuestra web encontrarás todos los alimentos para tu mascota al mejor precio</a>
+          <a class="enviosHeader nav-link navbar-brand" href="../Paginas adicionales/envios.html"><img src="../Imagenes/envios.png" alt="envio" width="30px"> Envíos sin cargo </a>
+        </div>
+      </nav>
+
+<!--FIN BARRA DE NAVEGACION-->
+
+<!--BOTON FLOTANTE DE WHATSAPP-->
+<p><a href="https://wa.me/5491167426465/?text=Hola! Me gustaría consultarte por un alimento."><img src="../Imagenes/WP BW.png" alt="whatsapp" width="40px"></a></p>
+
+
+<!--FIN DEL HEADER-->
+
+
+</header>
+
+<main>
+
+
+  <div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active text-body" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Gatos</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="profile-tab" data-bs-toggle="tab" data-bs-target="#royalcanin" type="button" role="tab" aria-controls="royalcanin" aria-selected="false">Royal Canin</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="contact-tab" data-bs-toggle="tab" data-bs-target="#proplan" type="button" role="tab" aria-controls="proplan" aria-selected="false">Pro Plan</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="contact-tab" data-bs-toggle="tab" data-bs-target="#nutrique" type="button" role="tab" aria-controls="nutrique" aria-selected="false">Nutrique</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="contact-tab" data-bs-toggle="tab" data-bs-target="#oldprince" type="button" role="tab" aria-controls="oldprince" aria-selected="false">Old Prince</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="contact-tab" data-bs-toggle="tab" data-bs-target="#excellent" type="button" role="tab" aria-controls="excellent" aria-selected="false">Excellent</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="contact-tab" data-bs-toggle="tab" data-bs-target="#vitalcan" type="button" role="tab" aria-controls="vitalcan" aria-selected="false">Vital Can</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-body" id="contact-tab" data-bs-toggle="tab" data-bs-target="#sieger" type="button" role="tab" aria-controls="sieger" aria-selected="false">Sieger</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+
+      <div class="container mainHomeTitulo text-center tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <h1>Alimento Balanceado para Gatos</h1>
+          <p>Contamos con la mas amplia variedad de alimento balanceado para tu gato, haciendo click en cada tab podrás encontrar más información acerca de cada una. 
+            <br>Si no encontrás el alimento que buscás, escribinos por privado y te lo conseguimos!</p> 
+            <img src="../Imagenes/FotosPerroGato/gatosfondo bw.jpg" alt=home0 width="100%">   
+      <br>
+      <br>
+          </div>
+
+      <div class="tab-pane fade" id="royalcanin" role="tabpanel" aria-labelledby="royalcanin-tab">
+         
+        <div class="container-fluid row">
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-mother-babycat-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Mother & BabyCat</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-kitten-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Kitten</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-indoor-longhair-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Indoor Long Hair</h5>  
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-indoor-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Indoor</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-indoor-7-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Indoor +7</h5>
+            </div>
+          </div>  
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-weight-care-feline-care-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Weight Care</h5>
+            </div>
+          </div>   
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-urinary-care-feline-care-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Urinary</h5>
+            </div>
+          </div> 
+                    
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-hair-skin-feline-care-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Hair Skin</h5>
+            </div>
+          </div> 
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-hairball-feline-care-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Hairball</h5>
+            </div>
+          </div> 
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-fit-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Fit</h5>
+            </div>
+          </div>   
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-sensible-feline-health-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Sensible</h5>
+            </div>
+          </div> 
+
+
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/RoyalCanin/Gatos/ar-l-producto-siamese-feline-breed-nutrition-seco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Royal Canin Siamese</h5>
+            </div>
+          </div> 
+
+        </div>
+        </div>
+
+      <div class="tab-pane fade" id="proplan" role="tabpanel" aria-labelledby="proplan-tab">
+        
+        <div class="container-fluid row">
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-kitten_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Kitten</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-adult_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Adult</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-adult-7+_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Adult +7</h5>
+            </div>
+          </div>
+
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-reduced-calorie_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Reduced Calorie</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-sensitive_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Sensitive</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-urinary_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Urinary</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-liveclear.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Live Clear</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/ProPlan/Gatos/proplan-gatos-sterilized.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Purina Pro Plan Sterilised</h5>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      <div class="tab-pane fade" id="nutrique" role="tabpanel" aria-labelledby="nutrique-tab">
+
+        <div class="container-fluid row">
+
+          
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Nutrique/Gatos/nutrique-babycatkitten.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nutrique Baby Cat Kitten</h5>
+            </div>
+          </div>
+        
+          
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Nutrique/Gatos/nutrique-youngadultcat.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nutrique Mainteinance</h5>
+            </div>
+          </div>
+         
+
+          
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Nutrique/Gatos/nutrique-sterilizedhealthyweightcat.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nutrique Sterilised / Healthy Weight</h5>
+            </div>
+          </div>
+         
+        
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Nutrique/Gatos/nutrique-urinarycat.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nutrique Urinary Care</h5>
+            </div>
+          </div>
+
+
+      </div>
+
+
+      </div>
+
+
+      <div class="tab-pane fade" id="oldprince" role="tabpanel" aria-labelledby="oldprince-tab">
+
+        <div class="container-fluid row">
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-kittencordero.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Kitten</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-adultcordero.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Adult</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-sterilized.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Sterilised</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-equilibriumkitten.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Equilibrium Kitten</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-equilibriumcomplete.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Equilibrium Complete</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-equilibriumindoorcare.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Equilibrium Indoor Care</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/OldPrince/Gatos/oldprince-equilibriumurinary.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Old Prince Equilibrium Urinary</h5>
+            </div>
+          </div>
+
+          </div>
+
+      </div>
+
+      <div class="tab-pane fade" id="excellent" role="tabpanel" aria-labelledby="excellent-tab">
+
+      <div class="container-fluid row">
+
+        <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+          <img src="../Imagenes/Marcas/Alimentos/Excellent/Gatos/excelent-kitten.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Purina Excellent Kitten</h5>
+          </div>
+        </div>
+
+        <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+          <img src="../Imagenes/Marcas/Alimentos/Excellent/Gatos/Excelent-gatos-adultos.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Purina Excellent Adult</h5>
+          </div>
+        </div>
+
+        <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+          <img src="../Imagenes/Marcas/Alimentos/Excellent/Gatos/Excelent-gatos-reduced-calorie.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Purina Excellent Reduced Calorie</h5>
+          </div>
+        </div>
+
+        <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+          <img src="../Imagenes/Marcas/Alimentos/Excellent/Gatos/Excelent-gatos-urinary.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Purina Excellent Urinary</h5>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="vitalcan" role="tabpanel" aria-labelledby="vitalcan-tab">
+        
+        <div class="container-fluid row">
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/okBalanced-Kitten2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Balanced Kitten</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/okBalanced-Cat-Adult1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Balanced Adult</h5>
+            </div>
+          </div>
+        
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/okBalanced-Cat-Senior1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Balanced Senior</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/okBalanced-Cat-pH-Control1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Balanced Control de PH</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/okBalanced-Cat-Control-Peso1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Balanced Control de Peso</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/therapy-gastro_felinos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Therapy Gastrointestinal</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/therapy-hypo_felinos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Therapy Hypoallergenic</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/therapy-obesity_felinos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Therapy Obesity</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/therapy-renal_felinos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Therapy Renal</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/VitalCan/Gatos/therapy-urinary_felinos (1).png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VitalCan Therapy Urinary</h5>
+            </div>
+          </div>
+
+      </div>
+      </div>
+      
+
+      
+      
+      <div class="tab-pane fade" id="sieger" role="tabpanel" aria-labelledby="sieger-tab">
+        
+        <div class="container-fluid row">
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Sieger/Gatos/katze-kitten.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sieger Kitten</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Sieger/Gatos/katze-adult.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sieger Adult</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Sieger/Gatos/katze-senior.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sieger Senior</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Sieger/Gatos/katze-light.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sieger Light</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Sieger/Gatos/katze-stress.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sieger Stress</h5>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-4 col-6" style="width: 19rem;">
+            <img src="../Imagenes/Marcas/Alimentos/Sieger/Gatos/katze-urinary.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sieger Urinary</h5>
+            </div>
+          </div>
+
+
+        </div>
+        </div>
+    
+      
+    
+    </div>
+
+  </div> 
+
+ 
+</main>
+<footer>
+
+<!--INICIO DEL FOOTER-->
+
+<section>
+    <div class="bg-light row text-center">
+        <div class="col-lg-4 col-md-6 col-12">
+          <ul><strong>NOSOTROS</strong>
+            <li>
+                <a href="../Paginas adicionales/preguntas frecuentes.html">Preguntas frecuentes</a>
+            </li>
+            <li>
+                <a href="../Paginas adicionales/nosotros.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <ul><strong>PRODUCTOS</strong>
+            <li><a  href="../Paginas adicionales/marcas.html">Marcas</a></li>
+        </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12">
+          <ul><strong>PAGO Y ENVÍOS</strong>
+            <li>Compra segura</li>
+            <li><a  href="../Paginas adicionales/envios.html">Áreas de cobertura</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>   
+
+    <article>
+    <div class="redesyderechos bg-light">
+
+        <div>
+        <ul class="seguinos"><strong>Seguinos en redes</strong>
+            <div>
+            <span><a  href="https://www.facebook.com/Mascoland-Store-113184507272640/"><img src="../Imagenes/FB BW.png" alt="facebook" width="30px"></a></span>
+            <span><a  href="https://www.instagram.com/mascolandstore/?igshid=1nhmh21jckhgu"><img src="../Imagenes/IG BW.png" alt="instagram" width="30px"></a></span>
+            </div>
+        </ul>
+        </div>
+    
+        <div class="derechos">
+        <p>2021 MascoLand Store todos los derechos reservados</p>
+        </div>
+    </div>
+
+    
+  </article>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
