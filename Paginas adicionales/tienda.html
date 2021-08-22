@@ -82,46 +82,47 @@
 
 </div>
 
-<ul><p>Lista de alimentos disponibles:</p>
 
-<li>1 - Royal Canin para perros, precio 2500 </li>
-<li>2 - Royal Canin para gatos, precio 2100</li>
-<li>3 - Eukanuba para perros, precio 2450</li>
-<li>4 - Nutrique para perros, precio 2400</li>
-<li>5 - Nutrique para gatos, precio 2000</li>
-</ul>
+
+    
+      <div id="testImprimir" class="container-fluid col-lg-3 col-md-4 col-6" style="width: 16rem"></div>
+    
+
+
 
 <section class="container-fluid">
   <div class="row">
-      <div class="col-4">
-          <h2 class="text-center">Formulario de Compra</h2>
+      <div class="text-center col-lg-6 col-md-6 col-12">
+          <h2 class="text-center">Hace tu pedido</h2>
 
           <form action="" class="text-center" id="form">
 
             <div class="row">
                   <label for="codigo">Que alimento queres comprar?</label>
-                  <input type="text" name="alimento" id="tipoAlimento" placeholder="Ingresa de 1 a 5" class="text-center" autocomplete="off">
+                  <input type="text" name="marca" id="marca" placeholder="Ingresa la marca" class="text-center" autocomplete="off">
+                  <input type="text" name="animal" id="animal" placeholder="Ingresa perro o gato" class="text-center" autocomplete="off">
+                  <input type="text" name="precio" id="precio" placeholder="Ingresa el precio" class="text-center" autocomplete="off">
               </div>
               <br>
               <button id="save">Agregar al carrito</button>
           </form>
           <button id="clear">Borrar Seleccion</button>
       </div><br>
-      <div class="col-4">
+      <div class="text-center container-fluid row col-lg-6 col-md-6 col-12">
           <br>
-          <h2 class="text-center">
-              Alimentos agregados al carrito
-          </h2>
-          <table id="table">
-              <tr>
-                  <th class="col-2">Alimento Elegido</th>
-                  <th class="col-2">Precio</th>
-              </tr>
+          <h2>Alimentos agregados al carrito</h2>
+          <table id="table" class="table-light">
+    
+                  <th class="table-light">Marca</th>
+                  <th class="table-light">Animal</th>
+                  <th class="table-light">Precio</th>
+              
           </table>
           <p id="err"></p>
       </div>
   </div>
 </section>
+<br>
 
 <footer>
 
