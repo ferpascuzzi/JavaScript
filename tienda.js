@@ -12,7 +12,7 @@ let cards = document.getElementById("listaProductos")
 let tablaPrint = document.getElementById("tabla")
 let total = document.getElementById("total")
 let btnClear = document.getElementById("clear")
-let btnComprar = document.getElementById("comprar")
+    //let btnComprar = document.getElementById("comprar")
 
 let carrito = [];
 
