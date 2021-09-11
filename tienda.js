@@ -13,6 +13,7 @@ let tablaPrint = document.getElementById("tabla")
 let total = document.getElementById("total")
 let btnClear = document.getElementById("clear")
     //let btnComprar = document.getElementById("comprar")
+let btnDeleteProd = 0
 
 let carrito = [];
 
@@ -124,7 +125,8 @@ const imprimirCarrito = () => {
             let button = document.createElement("button")
             button.setAttribute("class", "btn btn-outline-danger")
             button.setAttribute("id", `${e.id}`)
-            button.setAttribute("onclick", `deleteSelection(${e.id})`)
+            button.setAttribute("onclick", `deleteSelection(${e.btnDeleteProd})`)
+            btnDeleteProd = btnDeleteProd + 1
             button.textContent = "X"
             td4.appendChild(button)
 
@@ -136,12 +138,14 @@ const imprimirCarrito = () => {
     }
 }
 
+//BORRAR SELECCION//
 
 const deleteSelection = (id) => {
 
     let allProd = JSON.parse(localStorage.getItem("carrito"))
-    let allProdAct = allProd.filter(e => e.id != id)
-    localStorage.setItem("carrito", JSON.stringify(allProdAct))
+        //let allProdAct = allProd.filter(e => e.id != id)
+    allProd.splice(id, 1)
+    localStorage.setItem("carrito", JSON.stringify(allProd))
     location.reload()
 }
 
@@ -187,16 +191,18 @@ btnComprar.addEventListener("click", () => {
     //location.reload()
     Swal.fire({
         title: 'Confirmas tu compra?',
-        text: "Clickea Continuar para realizar la compra!",
-        icon: 'warning',
+        text: "Clickea COMPRAR para finalizar tu compra!",
+        icon: 'question',
         showCancelButton: true,
+        buttonsStyling: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'COMPRAR!'
+        confirmButtonText: 'COMPRAR'
+
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire(
-                'Haz realizado tu compra!',
+                'Felicitaciones, haz realizado tu compra!',
                 '',
                 'success'
             )
@@ -251,4 +257,32 @@ $("#btnForm").on("click", () => {
     console.log(notas);
 
     imprimirNota()
+})
+
+
+////////////////////////////////////////////////////////////////////
+////////////////// API TIPO DE CAMBIO PAGO USD /////////////////////
+////////////////////////////////////////////////////////////////////
+
+const url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+
+
+$.get(url, (respuesta, estado) => {
+    if (estado === "success") {
+
+        console.log(respuesta[1]);
+
+        respuesta.forEach(e => {
+
+            if (e.casa.agencia === "349") {
+                $(".tipoCambio").append(`
+            <div class="container col-2" id="${e.casa.agencia}">
+            <h6 class="text-center">${e.casa.nombre}</h6>
+            <p class="text-center">${e.casa.compra}</p>
+            </div>
+        `)
+            }
+        })
+
+    }
 })
