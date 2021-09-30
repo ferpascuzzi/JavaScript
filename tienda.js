@@ -3,7 +3,7 @@ class Producto {
         this.id = id;
         this.marca = marca;
         this.animal = animal;
-        this.precio = precio;
+        this.precio = precio
     }
 }
 
@@ -24,12 +24,16 @@ let producto2 = new Producto(2, "Royal Canin", "Gatos", 2100);
 let producto3 = new Producto(3, "Eukanuba", "Perros", 2450);
 let producto4 = new Producto(4, "Nutrique", "Perros", 2400);
 let producto5 = new Producto(5, "Nutrique", "Gatos", 2000);
+let producto6 = new Producto(6, "Old Prince", "Perros", 1900);
+let producto7 = new Producto(7, "Old Prince", "Gatos", 1550);
 
 productos.push(producto1)
 productos.push(producto2)
 productos.push(producto3)
 productos.push(producto4)
 productos.push(producto5)
+productos.push(producto6)
+productos.push(producto7)
 
 
 //ESTO LO ESTOY AGREGANDO PARA PROBAR EL DELETE
@@ -195,7 +199,7 @@ btnComprar.addEventListener("click", () => {
         icon: 'question',
         showCancelButton: true,
         buttonsStyling: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor: '#secondary',
         cancelButtonColor: '#d33',
         confirmButtonText: 'COMPRAR'
 
@@ -220,7 +224,7 @@ class Nota {
     constructor(nombre, direccion, telefono, email, note) {
         this.nombre = nombre;
         this.direccion = direccion;
-        this.telefono = telefono;
+        this.telefono = (telefono);
         this.email = email;
         this.note = note;
     }
@@ -276,7 +280,7 @@ $.get(url, (respuesta, estado) => {
 
             if (e.casa.agencia === "349") {
                 $(".tipoCambio").append(`
-            <div class="container col-2" id="${e.casa.agencia}">
+            <div class="container id="${e.casa.agencia}">
             <h6 class="text-center">${e.casa.nombre}</h6>
             <p class="text-center">${e.casa.compra}</p>
             </div>
